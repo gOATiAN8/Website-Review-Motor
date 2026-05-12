@@ -1,6 +1,6 @@
-ZONA MOTOR
+LENSA MOTOR
 
-Zona Motor adalah platform ulasan otomotif modern berbasis Frontend-Only yang dirancang untuk memberikan informasi mendalam, akurat, dan visual yang memukau bagi para pecinta sepeda motor di Indonesia. Proyek ini dibangun dengan fokus pada estetika premium, keterbacaan tinggi, dan pengalaman pengguna yang responsif tanpa memerlukan sistem backend.
+Lensa Motor adalah platform ulasan otomotif modern berbasis Frontend-Only yang dirancang untuk memberikan informasi mendalam, akurat, dan visual yang memukau bagi para pecinta sepeda motor di Indonesia. Proyek ini dibangun dengan fokus pada estetika premium, keterbacaan tinggi, dan pengalaman pengguna yang responsif tanpa memerlukan sistem backend.
 
 FITUR UTAMA
 
@@ -25,7 +25,7 @@ STRUKTUR PROYEK
   main.js         - Logika interaksi (Search, Animation, Scroll)
   Home.html       - Halaman utama (Landing Page)
   Product.html    - Katalog review motor
-  tentang kami.html - Informasi profil Zona Motor
+  tentang kami.html - Informasi profil Lensa Motor
   motor[1-3].html - Detail ulasan per unit motor
 
 PANDUAN INSTALASI LOKAL
@@ -33,7 +33,7 @@ PANDUAN INSTALASI LOKAL
 1. Clone Repository
 
 2. Buka Melalui Browser
-   Buka file Home.html langsung di browser favorit Anda, atau letakkan folder proyek di dalam direktori htdocs (jika menggunakan XAMPP) dan akses melalui http://localhost/Zona-Motor/Home.html.
+   Buka file Home.html langsung di browser favorit Anda, atau letakkan folder proyek di dalam direktori htdocs (jika menggunakan XAMPP) dan akses melalui http://localhost/Lensa-Motor/Home.html.
 
 KONTRIBUSI
 
