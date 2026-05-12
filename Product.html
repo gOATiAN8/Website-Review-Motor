@@ -4,177 +4,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zona Motor</title>
+  <title>Katalog Review | Zona Motor</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    .navbar-nav .nav-link {
-      color: #ffffff;
-      font-weight: bold;
-    }
-    
-    .custom-header {
-      background-color: #333333;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    } 
-
-    .custom-header .fs-4 {
-      font-size: 24px;
-      font-weight: bold;
-      color: #000000;
-    }
-
-    .banner {
-      position: relative;
-      padding: 50px 0;
-      color: #ffffff;
-      text-align: center;
-      overflow: hidden;
-    }
-    
-    .banner h3 {
-      font-size: 48px;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    }
-
-    .banner p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .card {
-      background-color: #fff;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-      height: 100%;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-title a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-    }
-
-    .box-container {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-top: 40px;
-    }
-
-    @media (max-width: 767.98px) {
-      .banner h3 {
-        font-size: 36px;
-      }
-
-      .banner p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Zona Motor</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="Home.html">Zona Motor</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>     
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <form id="searchForm" class="d-flex">
-              <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </li>         
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Product.html">Review</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang kami.html">Tentang Kami</a></li>
         </ul>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="Home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Product.html">Review</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tentang kami.html">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <form id="loginForm" class="d-flex" action="Login.html">
-                <button class="btn btn-outline-light" type="submit">Login</button>
-              </form>
-            </li> 
-          </ul>
-        </div>        
-      </div>
+        <div class="d-flex align-items-center">
+            <form class="d-flex" id="searchForm">
+              <input class="form-control me-2" type="search" placeholder="Cari Motor..." aria-label="Search" style="border-radius: 20px; font-size: 13px; padding: 8px 15px;">
+            </form>
+        </div>
+      </div>        
     </div>
   </nav>
 
-  <div class="box-container">
-    <section id="reviews" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Review Terbaru</h2>
-        <div class="row">
+  <div class="container" style="margin-top: 80px;">
+    <div class="box-container">
+      <section id="reviews">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Katalog Review</h1>
+            <p class="text-muted">Temukan ulasan mendalam untuk berbagai pilihan motor terbaru.</p>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Item 1 -->
           <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="asset/motor1.png" class="card-img-top" alt="Car 1">
-              <div class="card-body">
-                <h5 class="card-title">Ktm Rc 200</h5>
-                <p class="card-text">Ktm Rc 200 adalah sepeda motor sport populer yang diproduksi oleh KTM.</p>
-                <a href="motor1.html" class="btn btn-primary">Read More</a>
+            <div class="motor-card">
+              <div class="img-wrap">
+                <img src="asset/motor1.png" alt="KTM RC 200">
+              </div>
+              <div class="card-content">
+                <h5 class="motor-name text-center"><a href="motor1.html">KTM RC 200</a></h5>
+                <p class="motor-desc text-center">Analisis performa mesin 200cc dan handling racy untuk harian.</p>
+                <a href="motor1.html" class="btn btn-custom btn-sm w-100">Baca Review</a>
               </div>
             </div>
           </div>
+          <!-- Item 2 -->
           <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="asset/motor2.png" class="card-img-top" alt="Car 2">
-              <div class="card-body">
-                <h5 class="card-title">Yamaha Aerox 155</h5>
-                <p class="card-text">Yamaha Aerox 155 adalah skuter matik yang populer di Indonesia.</p>
-                <a href="motor2.html" class="btn btn-primary">Read More</a>
+            <div class="motor-card">
+              <div class="img-wrap">
+                <img src="asset/motor2.png" alt="Yamaha Aerox 155">
+              </div>
+              <div class="card-content">
+                <h5 class="motor-name text-center"><a href="motor2.html">Yamaha Aerox 155</a></h5>
+                <p class="motor-desc text-center">Ulasan fitur VVA dan desain sporty yang mendominasi kelas matik.</p>
+                <a href="motor2.html" class="btn btn-custom btn-sm w-100">Baca Review</a>
               </div>
             </div>
           </div>
+          <!-- Item 3 -->
           <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="asset/motor3.png" class="card-img-top" alt="Car 3">
-              <div class="card-body">
-                <h5 class="card-title">Yamaha Nmax 155</h5>
-                <p class="card-text">Yamaha NMAX adalah skuter bergaya mewah yang populer dari Yamaha.</p>
-                <a href="motor3.html" class="btn btn-primary">Read More</a>
+            <div class="motor-card">
+              <div class="img-wrap">
+                <img src="asset/motor3.png" alt="Yamaha Nmax 155">
+              </div>
+              <div class="card-content">
+                <h5 class="motor-name text-center"><a href="motor3.html">Yamaha Nmax 155</a></h5>
+                <p class="motor-desc text-center">Kenyamanan posisi berkendara dan fitur konektivitas modern.</p>
+                <a href="motor3.html" class="btn btn-custom btn-sm w-100">Baca Review</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 
+  <!-- Footer -->
   <footer>
-    <div class="container text-center">
-      <p>&copy; 2023 Zona Motor. All rights reserved.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mb-4">
+          <h5 class="navbar-brand text-white">Zona Motor</h5>
+          <p class="small">Platform ulasan otomotif terpercaya yang menyajikan ulasan mendalam, analisis, dan rekomendasi terbaik untuk para pecinta motor di Indonesia.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="Home.html" class="text-secondary text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="Product.html" class="text-secondary text-decoration-none">Review</a></li>
+            <li class="mb-2"><a href="tentang kami.html" class="text-secondary text-decoration-none">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Kontak</h5>
+          <p class="small mb-2">Email: info@zonamotor.id</p>
+          <p class="small mb-2">Alamat: Jakarta, Indonesia</p>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4 mb-4">
+      <p class="text-center small mb-0">&copy; 2023 Zona Motor. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
