@@ -31,7 +31,7 @@ STRUKTUR PROYEK
 PANDUAN INSTALASI LOKAL
 
 1. Clone Repository
-   git clone https://github.com/username/Zona-Motor.git
+   git clone
 
 2. Buka Melalui Browser
    Buka file Home.html langsung di browser favorit Anda, atau letakkan folder proyek di dalam direktori htdocs (jika menggunakan XAMPP) dan akses melalui http://localhost/Zona-Motor/Home.html.
