@@ -4,256 +4,168 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zona Motor</title>
+  <title>Zona Motor | Surga Ulasan Motor</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    /* Global Styles */
-    .navbar-nav .nav-link {
-      color: #ffffff;
-      font-weight: bold;
-    }
-
-    .custom-header {
-      background-color: #333333;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .custom-header .fs-4 {
-      font-size: 24px;
-      font-weight: bold;
-      color: #000000;
-    }
-
-    .banner {
-      position: relative;
-      padding: 50px 0;
-      color: #ffffff;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .banner h3 {
-      font-size: 48px;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    }
-
-    .banner p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .card {
-      background-color: #fff;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-      height: 100%;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-title a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-    }
-
-    .box-container {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-top: 40px;
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 767.98px) {
-      .banner h3 {
-        font-size: 36px;
-      }
-
-      .banner p {
-        font-size: 16px;
-      }
-
-      .hero-content h1 {
-        font-size: 40px;
-      }
-
-      .hero-content p {
-        font-size: 16px;
-      }
-
-      .navbar-nav .nav-link {
-        font-size: 14px;
-      }
-
-      .card {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-    }
-
-    /* Custom hero section styles */
-    .hero-section {
-      position: relative;
-      height: 650px;
-      background: url('asset/cover.png') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #ffffff;
-    }
-
-    .hero-content {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .hero-content h1 {
-      font-size: 55px;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    }
-
-    .hero-content p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Zona Motor</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="Home.html">Zona Motor</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>     
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <form id="searchForm" class="d-flex">
-              <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </li>         
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Product.html">Review</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang kami.html">Tentang Kami</a></li>
         </ul>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="Home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Product.html">Review</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tentang kami.html">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <form id="loginForm" class="d-flex" action="Login.html">
-                <button class="btn btn-outline-light" type="submit">Login</button>
-              </form>
-            </li> 
-          </ul>
-        </div>        
-      </div>
+        <div class="d-flex align-items-center">
+            <form class="d-flex" id="searchForm">
+              <input class="form-control me-2" type="search" placeholder="Cari Motor..." aria-label="Search" style="border-radius: 20px; font-size: 13px; padding: 8px 15px;">
+              <button class="btn btn-outline-light btn-sm px-3" type="submit" style="border-radius: 20px;">Search</button>
+            </form>
+        </div>
+      </div>        
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section id="home" class="hero-section">
-    <div class="hero-content">
-      <h1 class="display-4 mb-4" style="color: #ffcc00; font-size: 55px; font-weight: bold;">Surga Ulasan Motor</h1>
-      <p class="lead mb-5" style="color: #ffffff; font-size: 24px; font-weight: bold;">Temukan Ulasan Motor Terbaru dan Terlengkap</p>
-      <a href="#reviews" class="btn btn-light btn-lg" style="color: #000000; background-color: #ffffff;">Cek Ulasan Terbaru</a>
-    </div>
-  </section>
-
-  <!-- Reviews Section -->
-  <section id="reviews" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Review Terbaru</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="asset/motor1.png" class="card-img-top" alt="Car 1">
-            <div class="card-body">
-              <h5 class="card-title">Ktm Rc 200</h5>
-              <p class="card-text">Ktm Rc 200 adalah sepeda motor sport populer yang diproduksi oleh KTM.</p>
-              <a href="motor1.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="asset/motor2.png" class="card-img-top" alt="Car 2">
-            <div class="card-body">
-              <h5 class="card-title">Yamaha Aerox 155</h5>
-              <p class="card-text">Yamaha Aerox 155 adalah skuter matik yang populer di Indonesia.</p>
-              <a href="motor2.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="asset/motor3.png" class="card-img-top" alt="Car 3">
-            <div class="card-body">
-              <h5 class="card-title">Yamaha Nmax 155</h5>
-              <p class="card-text">Yamaha NMAX adalah skuter bergaya mewah yang populer dari Yamaha.</p>
-              <a href="motor3.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10 hero-content">
+          <h1 class="display-4">Surga Ulasan Motor</h1>
+          <p class="lead mb-4">Temukan Ulasan Motor Terbaru dan Terlengkap untuk Perjalanan Anda.</p>
+          <a href="#reviews" class="btn btn-custom btn-lg">Cek Ulasan Terbaru</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Us</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Your Name</label>
-          <input type="text" class="form-control" id="name" required>
+  <!-- Content Area -->
+  <div class="container" style="position: relative; z-index: 100;">
+    
+    <!-- Reviews Section -->
+    <div class="box-container mb-5">
+      <section id="reviews">
+        <div class="text-center mb-5">
+            <span class="text-primary fw-bold text-uppercase small" style="letter-spacing: 2px;">Review Eksklusif</span>
+            <h2 class="fw-bold mt-2">Ulasan Motor Terbaru</h2>
+            <div class="mx-auto mt-3" style="width: 50px; height: 3px; background: var(--primary-color);"></div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Your Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
 
-  <!-- Footer Section -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-      <p>&copy; 2023 Zona Motor. All rights reserved.</p>
+        <div class="row g-4">
+          <!-- Motor 1 -->
+          <div class="col-md-4">
+            <div class="motor-card h-100">
+              <div class="img-wrap">
+                <img src="asset/motor1.png" alt="KTM RC 200">
+              </div>
+              <div class="card-content p-4">
+                <h5 class="motor-name fw-bold mb-2"><a href="motor1.html">KTM RC 200</a></h5>
+                <p class="motor-desc small mb-4">Ulasan mendalam tentang performa mesin 200cc dan handling racy untuk harian.</p>
+                <a href="motor1.html" class="btn btn-custom btn-sm w-100">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <!-- Motor 2 -->
+          <div class="col-md-4">
+            <div class="motor-card h-100">
+              <div class="img-wrap">
+                <img src="asset/motor2.png" alt="Yamaha Aerox 155">
+              </div>
+              <div class="card-content p-4">
+                <h5 class="motor-name fw-bold mb-2"><a href="motor2.html">Yamaha Aerox 155</a></h5>
+                <p class="motor-desc small mb-4">Eksplorasi fitur modern dan mesin bertenaga pada skuter matik sporty populer.</p>
+                <a href="motor2.html" class="btn btn-custom btn-sm w-100">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <!-- Motor 3 -->
+          <div class="col-md-4">
+            <div class="motor-card h-100">
+              <div class="img-wrap">
+                <img src="asset/motor3.png" alt="Yamaha Nmax 155">
+              </div>
+              <div class="card-content p-4">
+                <h5 class="motor-name fw-bold mb-2"><a href="motor3.html">Yamaha Nmax 155</a></h5>
+                <p class="motor-desc small mb-4">Menganalisis kenyamanan posisi berkendara dan kemewahan fitur konektivitas.</p>
+                <a href="motor3.html" class="btn btn-custom btn-sm w-100">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="box-container">
+      <section id="contact">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase small" style="letter-spacing: 2px;">Hubungi Kami</span>
+                <h2 class="fw-bold mt-2">Kirim Pesan</h2>
+                <p class="text-muted small mt-3">Punya pertanyaan? Tim kami akan segera merespons Anda.</p>
+            </div>
+            
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-bold text-secondary">Nama Lengkap</label>
+                <input type="text" class="form-control bg-light border-0 py-3 px-3" placeholder="Nama Anda" style="border-radius: 10px;">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold text-secondary">Email</label>
+                <input type="email" class="form-control bg-light border-0 py-3 px-3" placeholder="Email Anda" style="border-radius: 10px;">
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold text-secondary">Pesan Anda</label>
+                <textarea class="form-control bg-light border-0 py-3 px-3" rows="4" placeholder="Tuliskan pesan di sini..." style="border-radius: 10px;"></textarea>
+              </div>
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-custom px-5 py-3">Kirim Sekarang</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mb-4">
+          <h5 class="navbar-brand text-white">Zona Motor</h5>
+          <p class="small">Platform ulasan otomotif terpercaya yang menyajikan ulasan mendalam, analisis, dan rekomendasi terbaik untuk para pecinta motor di Indonesia.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="Home.html" class="text-secondary text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="Product.html" class="text-secondary text-decoration-none">Review</a></li>
+            <li class="mb-2"><a href="tentang kami.html" class="text-secondary text-decoration-none">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Kontak</h5>
+          <p class="small mb-2">Email: info@zonamotor.id</p>
+          <p class="small mb-2">Alamat: Jakarta, Indonesia</p>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4 mb-4">
+      <p class="text-center small mb-0">&copy; 2023 Zona Motor. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
