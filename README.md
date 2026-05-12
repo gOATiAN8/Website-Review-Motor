@@ -1,6 +1,6 @@
 ZONA MOTOR
 
-Zona Motor adalah platform ulasan otomotif modern yang dirancang untuk memberikan informasi mendalam, akurat, dan visual yang memukau bagi para pecinta sepeda motor di Indonesia. Proyek ini dibangun dengan fokus pada estetika premium, keterbacaan tinggi, dan pengalaman pengguna yang responsif.
+Zona Motor adalah platform ulasan otomotif modern berbasis Frontend-Only yang dirancang untuk memberikan informasi mendalam, akurat, dan visual yang memukau bagi para pecinta sepeda motor di Indonesia. Proyek ini dibangun dengan fokus pada estetika premium, keterbacaan tinggi, dan pengalaman pengguna yang responsif tanpa memerlukan sistem backend.
 
 FITUR UTAMA
 
@@ -31,7 +31,6 @@ STRUKTUR PROYEK
 PANDUAN INSTALASI LOKAL
 
 1. Clone Repository
-   git clone
 
 2. Buka Melalui Browser
    Buka file Home.html langsung di browser favorit Anda, atau letakkan folder proyek di dalam direktori htdocs (jika menggunakan XAMPP) dan akses melalui http://localhost/Zona-Motor/Home.html.
